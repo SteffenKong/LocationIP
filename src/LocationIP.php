@@ -12,17 +12,32 @@ use GuzzleHttp\Client;
 class LocationIP
 {
 
+    /**
+     * @var string
+     */
     protected $key;
 
+    /**
+     * @var string
+     */
     private $baseUrl = 'https://restapi.amap.com/';
 
+    /**
+     * @var string
+     */
     private $uri = 'v3/ip';
 
+    /**
+     * @var array
+     */
     protected $guzzleOptions = [];
 
     // 私有化克隆
     private function __clone(){}
 
+    /**
+     * @var null
+     */
     private static $instance = null;
 
 
@@ -70,7 +85,6 @@ class LocationIP
 
 
     /**
-     * @param $uri
      * @param $ip
      * @param string $output
      * @return false|string
