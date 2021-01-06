@@ -1,0 +1,18 @@
+{
+    "name": "steffenkong/location-ip",
+    "description": "一款基于高德地图的IP定位工具",
+    "authors": [
+        {
+            "name": "konghy",
+            "email": "konghy@pvc123.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SteffenKong\\LocationIP\\": "./src/"
+        }
+    }
+}
